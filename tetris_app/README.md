@@ -2,17 +2,19 @@
 Tetris game built on HTML5 Canvas and Javascript. Built mostly as a learning exercise for array matrixes and how to manipulate them.
 [Live app](https://squaredrop.io)
 
-# Deployed Tetris application to Azure App Service by using Azure DevOps pipeline and release functions.
+# Deploying a tetris application to Azure App Service by using Azure DevOps pipeline and release functions.
 
-1- first, an azure container registry resource has been created using terraspace and then the docker image of the app has been created created and deployed to the azure container registry by using azure pipelines. 
+1- An azure container registry resource has been created using terraspace. Please check /terraspace codes/app/stacks/acr/
+  
+  <img width="1432" alt="Screen Shot 2023-02-05 at 5 23 47 PM" src="https://user-images.githubusercontent.com/113396504/216851395-06ccbe56-9ab0-423c-8fd3-3ce9c42b8bd8.png">
 
-<img width="1432" alt="Screen Shot 2023-02-05 at 5 23 47 PM" src="https://user-images.githubusercontent.com/113396504/216851395-06ccbe56-9ab0-423c-8fd3-3ce9c42b8bd8.png">
+2-The docker image of the app has been created and deployed to the azure container registry by using azure pipelines. 
 
 <img width="1432" alt="Screen Shot 2023-02-05 at 5 24 09 PM" src="https://user-images.githubusercontent.com/113396504/216851291-0d1ac777-57a0-4ef6-a29d-a0e35dabafb8.png">
 
 <img width="1432" alt="Screen Shot 2023-02-05 at 6 11 32 PM" src="https://user-images.githubusercontent.com/113396504/216851449-c8e818c8-f588-490c-a3ad-803e327a96f1.png">
 
-2- secondly, an azure app service resource has been created using terraspace and then a relase pipeline has been created and the tetris app has been deployed to the app service.  
+3- After deploying the image to the acr, an azure app service resource has been created using terraspace. Please check /terraspace codes/app/stacks/tetris_linux_webapp/ 
 
 <img width="1432" alt="Screen Shot 2023-02-05 at 5 24 24 PM" src="https://user-images.githubusercontent.com/113396504/216852209-6f678b48-48d1-4719-b052-36e704d4199f.png">
 
